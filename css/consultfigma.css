@@ -1,0 +1,306 @@
+html{
+font-family: Montserrat;
+margin: 0;
+padding: 0;
+height: 100%;
+border: 0;
+}
+
+.headpage {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(90deg, #f1f1f1 60%, #f38b8b 40%);
+    min-height: 100vh;
+    overflow: hidden;
+    border: 0;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+.main{
+    padding-top: 10px ;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    position: relative;
+    z-index: 2;
+}
+
+.header2
+{
+    font-weight: bold;
+     font-size: 32px;
+     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.main > .header{
+    gap: 50px;
+    padding-top: 0;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1120px;
+}
+
+.button{
+
+  font-size: 20px;
+   border-radius: 50px;
+    border: none;
+    color:white;
+  background-color: rgb(221, 103, 103);
+}
+
+.button-group {
+    margin-left: 470px;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+  }
+
+.blockimage{
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.blockimage > .image{
+    margin-right: 150px;
+}
+
+.blockimage2{
+    display: flex;
+    justify-content: center;
+}
+
+.blockimage2 .image2 {
+    margin-left: 100px;
+   position: absolute;
+}
+
+.blockimage2 .right{
+margin-left: 00px;
+z-index: 2;
+}
+.blockimage2 .left{
+margin-right: 470px;
+z-index: 2;
+}
+
+.expert-list{
+justify-content: space-between;
+gap: 30px;
+margin-top: 150px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expert-list > .expert-item{
+    max-width: 390px;
+    align-items: flex-start;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 2px  rgba(0, 0, 0, 0.144); 
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.expert-info{
+    box-shadow: #f1f1f1 0px 0px 0px 2px inset;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.expert-10000{
+    background-color: white;
+    height: 100px; /* Reduced height */
+    width: 180px; /* Reduced width */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Adjusted shadow for smaller size */
+    position: absolute;
+    top: -50px; 
+ left: 240px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px; /* Reduced font size */
+    padding: 5px 10px; /* Adjusted padding */
+    border-radius: 10px; /* Slightly smaller border radius */
+    z-index: 10;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imageblock{
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.imagedescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.FAQ-block{
+    gap: 150px;
+    margin-top: 100px;
+    display: grid;
+ grid-template-areas: 
+ "FAQ-image-left FAQ FAQ-image-right";
+}
+
+.FAQ-image-left{
+    margin-left: 0;
+    margin-top: 100px;
+    grid-area: FAQ-image-left;
+}
+
+.FAQ-image-right{
+    margin-right: 0;
+    margin-top: 100px;
+    grid-area: FAQ-image-right;
+}
+
+.FAQ{
+    grid-area: FAQ;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.FAQ > div{
+    display: grid;
+    grid-template-areas: 
+    "check question"
+    "check answer";
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.check{
+    grid-area: check;
+
+}
+
+.answer{
+    grid-area: answer;
+}
+
+.question{
+    grid-area: question;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.header3{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.commentblock{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.comment{
+    
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 2px  rgba(0, 0, 0, 0.144);
+    border: 20px;
+    height: 434px;
+    width: 526px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer{
+    background-color: #fff5f5; /* Light pink background */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Add padding for spacing */
+    font-size: 14px;
+    color: #2c2c2c; /* Dark gray text */
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Small gap between lines */
+}
+
+.footer-text img{
+    width: 150px; /* Adjust logo size */
+}
+
+.footer-text a{
+    text-decoration: none;
+    color: rgb(221, 103, 103); /* Red links */
+    font-weight: bold;
+}
+
+.footer-text a:hover{
+    text-decoration: underline; /* Add underline on hover */
+}
